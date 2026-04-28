@@ -5,16 +5,42 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Speed PDF – Fast PDF Editor for Windows | Speed AI</title>
+  <title>Speed PDF – Fast PDF Editor for Windows</title>
 
-  <meta name="description" content="Speed PDF by Speed AI is the fastest PDF editor for Windows. Merge, remove pages, annotate, and sign PDFs instantly. Lightweight, offline, AI-powered.">
+  <meta name="description" content="Fast, lightweight PDF editor for Windows. Merge, edit, annotate, and sign PDFs instantly.">
 
   <link rel="stylesheet" href="assets/styles.css">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Speed PDF – Fast PDF Editor for Windows">
-  <meta property="og:description" content="Fast, lightweight PDF editor for Windows with AI-powered features.">
-  <meta property="og:type" content="website">
+  <style>
+    .hero-img {
+      width: 100%;
+      max-width: 1000px;
+      border-radius: 16px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+      margin-top: 40px;
+    }
+
+    .email-box {
+      margin-top: 20px;
+    }
+
+    .email-box input {
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      width: 240px;
+    }
+
+    .email-box button {
+      padding: 12px 16px;
+      margin-left: 10px;
+      border-radius: 8px;
+      border: none;
+      background: #4F46E5;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
 
 </head>
 
@@ -37,81 +63,71 @@
 <!-- HERO -->
 <div class="hero">
 
-  <img src="assets/logo.svg" style="height:50px;margin-bottom:20px;" />
-
   <h1>Fastest PDF Editor for Windows</h1>
 
   <p>
-    Speed PDF lets you merge, remove pages, annotate, sign, and edit PDFs instantly.
-    Built for speed. Designed for simplicity. Powered by AI.
+    Merge, edit, annotate, and sign PDFs instantly.
+    Built for speed. Designed for simplicity.
   </p>
 
-  <div style="margin-top:25px;">
-    <a class="btn" href="#">Download for Windows</a>
-    <a class="btn btn-outline" href="#demo">View Demo</a>
+  <!-- EMAIL CAPTURE -->
+  <div class="email-box">
+    <input type="email" id="email" placeholder="Enter your email">
+    <button onclick="downloadApp()">Download</button>
   </div>
 
-  <p style="margin-top:12px;color:#777;font-size:13px;">
-    ⚡ Opens in under 1 second • Works offline • Lightweight
+  <p style="margin-top:10px;color:#777;font-size:13px;">
+    ⚡ Opens instantly • Works offline • Lightweight
   </p>
 
-</div>
+  <!-- HERO IMAGE -->
+  <img src="assets/hero.png" class="hero-img" alt="Speed PDF UI">
 
-<!-- PRODUCT HERO IMAGE -->
-<div class="container" id="demo" style="text-align:center;">
-  <img src="assets/hero.png" style="width:100%;max-width:1000px;border-radius:16px;box-shadow:0 20px 60px rgba(0,0,0,0.1);" />
 </div>
 
 <!-- FEATURES -->
 <div class="container">
-
-  <h2>Everything you need, nothing you don’t</h2>
+  <h2>Everything you need</h2>
 
   <div class="grid">
 
     <div class="card">
-      <img src="assets/icons/speed.svg" width="28">
-      <h3>Lightning Fast</h3>
-      <p>Opens PDFs instantly without lag.</p>
+      <h3>⚡ Fast</h3>
+      <p>Open PDFs instantly</p>
     </div>
 
     <div class="card">
-      <img src="assets/icons/pdf.svg" width="28">
-      <h3>Merge PDFs</h3>
-      <p>Combine multiple PDFs in seconds.</p>
+      <h3>✂️ Remove Pages</h3>
+      <p>Edit PDFs easily</p>
     </div>
 
     <div class="card">
-      <img src="assets/icons/edit.svg" width="28">
-      <h3>Edit & Annotate</h3>
-      <p>Highlight, comment, and modify text.</p>
+      <h3>🔗 Merge</h3>
+      <p>Combine multiple files</p>
     </div>
 
     <div class="card">
-      <img src="assets/icons/pdf.svg" width="28">
-      <h3>Sign Documents</h3>
-      <p>Add digital signatures easily.</p>
+      <h3>✍️ Sign</h3>
+      <p>Add digital signatures</p>
     </div>
 
   </div>
-
 </div>
 
-<!-- PRODUCT SCREENSHOTS -->
+<!-- SCREENSHOTS -->
 <div class="container">
-
-  <h2>See Speed PDF in action</h2>
+  <h2>See it in action</h2>
 
   <div class="grid">
 
     <div class="card">
       <img src="assets/screenshots/pdf-editor.png" style="width:100%;border-radius:10px;">
-      <p>PDF Editor Interface</p>
+      <p>PDF Editor</p>
     </div>
 
     <div class="card">
       <img src="assets/screenshots/ai-panel.png" style="width:100%;border-radius:10px;">
-      <p>AI Assistant Panel</p>
+      <p>AI Assistant</p>
     </div>
 
     <div class="card">
@@ -121,49 +137,18 @@
 
     <div class="card">
       <img src="assets/screenshots/sign-tool.png" style="width:100%;border-radius:10px;">
-      <p>Signature Tool</p>
+      <p>Sign Tool</p>
     </div>
 
   </div>
-
-</div>
-
-<!-- AI SECTION -->
-<div class="container">
-
-  <h2>Built with Edge AI</h2>
-
-  <div class="grid">
-
-    <div class="card">
-      <img src="assets/icons/ai.svg" width="28">
-      <h3>Explain PDFs</h3>
-      <p>Understand complex documents instantly.</p>
-    </div>
-
-    <div class="card">
-      <img src="assets/icons/ai.svg" width="28">
-      <h3>Summarize</h3>
-      <p>Get key insights in seconds.</p>
-    </div>
-
-    <div class="card">
-      <img src="assets/icons/ai.svg" width="28">
-      <h3>Extract Data</h3>
-      <p>Pull structured info from PDFs.</p>
-    </div>
-
-  </div>
-
 </div>
 
 <!-- FOOTER -->
 <div class="footer">
-
   <div class="container">
 
     <strong>Speed AI</strong>
-    <p>Fast, lightweight AI-powered software tools.</p>
+    <p>Fast, lightweight AI-powered tools.</p>
 
     <a href="about.html">About</a>
     <a href="pricing.html">Pricing</a>
@@ -174,8 +159,25 @@
     </p>
 
   </div>
-
 </div>
+
+<!-- SCRIPT -->
+<script>
+function downloadApp() {
+  const email = document.getElementById("email").value;
+
+  if (!email) {
+    alert("Please enter your email");
+    return;
+  }
+
+  // Save email locally (basic capture)
+  localStorage.setItem("user_email", email);
+
+  // Redirect to download (replace with your real file later)
+  window.location.href = "https://example.com/speedpdf-download.exe";
+}
+</script>
 
 </body>
 </html>
