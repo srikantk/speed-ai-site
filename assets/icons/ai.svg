@@ -1,0 +1,14 @@
+<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="14" cy="14" r="14" fill="#F5F3FF"/>
+  <circle cx="14" cy="14" r="5" fill="#4F46E5" fill-opacity="0.15" stroke="#4F46E5" stroke-width="1.5"/>
+  <circle cx="14" cy="14" r="2" fill="#4F46E5"/>
+  <!-- sparks -->
+  <line x1="14" y1="6" x2="14" y2="8" stroke="#4F46E5" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="14" y1="20" x2="14" y2="22" stroke="#4F46E5" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="6" y1="14" x2="8" y2="14" stroke="#4F46E5" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="20" y1="14" x2="22" y2="14" stroke="#4F46E5" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="8.7" y1="8.7" x2="10.1" y2="10.1" stroke="#4F46E5" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="17.9" y1="17.9" x2="19.3" y2="19.3" stroke="#4F46E5" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="19.3" y1="8.7" x2="17.9" y2="10.1" stroke="#4F46E5" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="10.1" y1="17.9" x2="8.7" y2="19.3" stroke="#4F46E5" stroke-width="1.5" stroke-linecap="round"/>
+</svg>

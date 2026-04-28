@@ -1,20 +1,190 @@
-<svg width="1200" height="600" viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg">
+<svg width="1200" height="700" viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="heroGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#EEF2FF;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#F5F3FF;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4F46E5;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#7C3AED;stop-opacity:1"/>
+    </linearGradient>
+    <filter id="winShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="20" stdDeviation="30" flood-color="#4F46E540"/>
+    </filter>
+    <filter id="panelShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#00000020"/>
+    </filter>
+  </defs>
 
-  <rect width="1200" height="600" fill="#F8FAFF"/>
+  <!-- Background -->
+  <rect width="1200" height="700" fill="url(#heroGrad)"/>
 
-  <!-- PDF WINDOW -->
-  <rect x="350" y="100" width="500" height="400" rx="16" fill="white" stroke="#E5E7EB"/>
+  <!-- Decorative circles -->
+  <circle cx="100" cy="100" r="200" fill="#4F46E5" fill-opacity="0.04"/>
+  <circle cx="1100" cy="600" r="250" fill="#7C3AED" fill-opacity="0.05"/>
 
-  <!-- TOP BAR -->
-  <rect x="350" y="100" width="500" height="40" rx="16" fill="#F3F4F6"/>
+  <!-- MAIN APP WINDOW -->
+  <rect x="80" y="60" width="1040" height="600" rx="16" fill="white" filter="url(#winShadow)"/>
+
+  <!-- Title Bar -->
+  <rect x="80" y="60" width="1040" height="46" rx="16" fill="#F9FAFB"/>
+  <rect x="80" y="90" width="1040" height="16" fill="#F9FAFB"/>
+  <rect x="80" y="106" width="1040" height="1" fill="#E5E7EB"/>
+  <!-- Traffic lights -->
+  <circle cx="106" cy="83" r="7" fill="#FF5F57"/>
+  <circle cx="127" cy="83" r="7" fill="#FEBC2E"/>
+  <circle cx="148" cy="83" r="7" fill="#28C840"/>
+  <!-- Window title -->
+  <text x="600" y="88" text-anchor="middle" font-family="Inter,Arial" font-size="14" fill="#6B7280" font-weight="500">Speed PDF — company-strategy-2025.pdf</text>
+
+  <!-- Toolbar -->
+  <rect x="80" y="107" width="1040" height="48" fill="#FAFAFA"/>
+  <rect x="80" y="155" width="1040" height="1" fill="#E5E7EB"/>
+  <!-- Toolbar items -->
+  <rect x="96" y="120" width="70" height="26" rx="6" fill="#4F46E5"/>
+  <text x="131" y="136" text-anchor="middle" font-family="Inter,Arial" font-size="12" fill="white" font-weight="600">Open</text>
+  <rect x="172" y="120" width="70" height="26" rx="6" fill="white" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="207" y="136" text-anchor="middle" font-family="Inter,Arial" font-size="12" fill="#374151">Save</text>
+  <rect x="248" y="120" width="70" height="26" rx="6" fill="white" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="283" y="136" text-anchor="middle" font-family="Inter,Arial" font-size="12" fill="#374151">Merge</text>
+  <rect x="324" y="120" width="70" height="26" rx="6" fill="white" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="359" y="136" text-anchor="middle" font-family="Inter,Arial" font-size="12" fill="#374151">Sign</text>
+  <rect x="400" y="120" width="90" height="26" rx="6" fill="#EEF2FF" stroke="#C7D2FE" stroke-width="1"/>
+  <text x="445" y="136" text-anchor="middle" font-family="Inter,Arial" font-size="12" fill="#4F46E5" font-weight="600">✦ AI Ask</text>
+  <!-- Zoom -->
+  <text x="930" y="137" font-family="Inter,Arial" font-size="12" fill="#9CA3AF">−  100%  +</text>
 
   <!-- SIDEBAR -->
-  <rect x="360" y="150" width="80" height="330" rx="8" fill="#F9FAFB"/>
+  <rect x="80" y="156" width="110" height="504" fill="#F9FAFB"/>
+  <rect x="190" y="156" width="1" height="504" fill="#E5E7EB"/>
 
-  <!-- AI PANEL -->
-  <rect x="860" y="140" width="220" height="200" rx="12" fill="white" stroke="#E5E7EB"/>
+  <!-- Page thumbnails -->
+  <rect x="92" y="172" width="86" height="112" rx="6" fill="white" stroke="#4F46E5" stroke-width="2"/>
+  <rect x="96" y="176" width="78" height="6" rx="2" fill="#E5E7EB"/>
+  <rect x="96" y="186" width="78" height="4" rx="2" fill="#E5E7EB"/>
+  <rect x="96" y="194" width="60" height="4" rx="2" fill="#E5E7EB"/>
+  <rect x="96" y="204" width="78" height="22" rx="3" fill="#F3F4F6"/>
+  <rect x="96" y="230" width="78" height="4" rx="2" fill="#E5E7EB"/>
+  <rect x="96" y="238" width="78" height="4" rx="2" fill="#E5E7EB"/>
+  <rect x="96" y="246" width="50" height="4" rx="2" fill="#E5E7EB"/>
+  <rect x="96" y="256" width="78" height="4" rx="2" fill="#E5E7EB"/>
+  <rect x="96" y="264" width="78" height="4" rx="2" fill="#E5E7EB"/>
+  <text x="135" y="292" text-anchor="middle" font-family="Inter,Arial" font-size="10" fill="#4F46E5" font-weight="600">1</text>
 
-  <text x="880" y="170" font-size="14" fill="#4F46E5">AI Assistant</text>
-  <text x="880" y="200" font-size="12" fill="#6B7280">Summarize PDF instantly</text>
+  <rect x="92" y="300" width="86" height="112" rx="6" fill="white" stroke="#E5E7EB" stroke-width="1"/>
+  <rect x="96" y="304" width="78" height="6" rx="2" fill="#E5E7EB"/>
+  <rect x="96" y="314" width="78" height="4" rx="2" fill="#E5E7EB"/>
+  <rect x="96" y="322" width="60" height="4" rx="2" fill="#E5E7EB"/>
+  <rect x="96" y="332" width="78" height="22" rx="3" fill="#F3F4F6"/>
+  <rect x="96" y="358" width="78" height="4" rx="2" fill="#E5E7EB"/>
+  <rect x="96" y="366" width="78" height="4" rx="2" fill="#E5E7EB"/>
+  <rect x="96" y="374" width="50" height="4" rx="2" fill="#E5E7EB"/>
+  <text x="135" y="420" text-anchor="middle" font-family="Inter,Arial" font-size="10" fill="#9CA3AF">2</text>
 
+  <rect x="92" y="428" width="86" height="112" rx="6" fill="white" stroke="#E5E7EB" stroke-width="1"/>
+  <rect x="96" y="432" width="78" height="6" rx="2" fill="#E5E7EB"/>
+  <rect x="96" y="442" width="78" height="4" rx="2" fill="#E5E7EB"/>
+  <rect x="96" y="450" width="60" height="4" rx="2" fill="#E5E7EB"/>
+  <text x="135" y="548" text-anchor="middle" font-family="Inter,Arial" font-size="10" fill="#9CA3AF">3</text>
+
+  <!-- MAIN PDF VIEWER -->
+  <rect x="191" y="156" width="650" height="504" fill="#EAECF0"/>
+  <!-- PDF Page -->
+  <rect x="271" y="178" width="490" height="640" rx="6" fill="white" stroke="#D1D5DB" stroke-width="1"/>
+  <!-- Header -->
+  <text x="310" y="210" font-family="Inter,Arial" font-size="16" fill="#111827" font-weight="700">2025 Company Strategy</text>
+  <rect x="310" y="220" width="400" height="1" fill="#E5E7EB"/>
+  <text x="310" y="236" font-family="Inter,Arial" font-size="11" fill="#6B7280">Confidential — Internal Use Only</text>
+
+  <!-- Body text -->
+  <rect x="310" y="250" width="412" height="6" rx="2" fill="#D1D5DB"/>
+  <rect x="310" y="262" width="412" height="6" rx="2" fill="#D1D5DB"/>
+  <rect x="310" y="274" width="300" height="6" rx="2" fill="#D1D5DB"/>
+
+  <!-- Section title -->
+  <text x="310" y="298" font-family="Inter,Arial" font-size="12" fill="#374151" font-weight="700">Executive Summary</text>
+  <rect x="310" y="308" width="412" height="5" rx="2" fill="#D1D5DB"/>
+  <rect x="310" y="317" width="412" height="5" rx="2" fill="#D1D5DB"/>
+  <rect x="310" y="326" width="380" height="5" rx="2" fill="#D1D5DB"/>
+  <rect x="310" y="335" width="412" height="5" rx="2" fill="#D1D5DB"/>
+  <rect x="310" y="344" width="200" height="5" rx="2" fill="#D1D5DB"/>
+
+  <!-- Inline chart -->
+  <rect x="310" y="360" width="412" height="150" rx="6" fill="#F8FAFF" stroke="#E5E7EB" stroke-width="1"/>
+  <!-- Bar chart bars -->
+  <rect x="350" y="468" width="36" height="32" rx="3" fill="#4F46E5" fill-opacity="0.3"/>
+  <rect x="398" y="448" width="36" height="52" rx="3" fill="#4F46E5" fill-opacity="0.5"/>
+  <rect x="446" y="428" width="36" height="72" rx="3" fill="#4F46E5" fill-opacity="0.7"/>
+  <rect x="494" y="418" width="36" height="82" rx="3" fill="#4F46E5" fill-opacity="0.85"/>
+  <rect x="542" y="400" width="36" height="100" rx="3" fill="#4F46E5"/>
+  <rect x="590" y="412" width="36" height="88" rx="3" fill="#4F46E5" fill-opacity="0.9"/>
+  <rect x="638" y="440" width="36" height="60" rx="3" fill="#4F46E5" fill-opacity="0.6"/>
+  <rect x="310" y="498" width="412" height="1" fill="#E5E7EB"/>
+  <text x="310" y="508" font-family="Inter,Arial" font-size="9" fill="#9CA3AF">Q1</text>
+  <text x="358" y="508" font-family="Inter,Arial" font-size="9" fill="#9CA3AF">Q2</text>
+  <text x="406" y="508" font-family="Inter,Arial" font-size="9" fill="#9CA3AF">Q3</text>
+  <text x="454" y="508" font-family="Inter,Arial" font-size="9" fill="#9CA3AF">Q4</text>
+
+  <!-- Highlighted text -->
+  <rect x="310" y="520" width="412" height="5" rx="2" fill="#D1D5DB"/>
+  <rect x="310" y="529" width="412" height="5" rx="2" fill="#D1D5DB"/>
+  <rect x="310" y="529" width="200" height="7" rx="2" fill="#FEF08A" fill-opacity="0.8"/>
+  <rect x="310" y="538" width="412" height="5" rx="2" fill="#D1D5DB"/>
+  <rect x="310" y="547" width="280" height="5" rx="2" fill="#D1D5DB"/>
+
+  <!-- Comment bubble -->
+  <rect x="540" y="520" width="150" height="38" rx="8" fill="#FFFBEB" stroke="#FDE68A" stroke-width="1" filter="url(#panelShadow)"/>
+  <text x="552" y="536" font-family="Inter,Arial" font-size="9" fill="#92400E">💬 Key growth driver</text>
+  <text x="552" y="550" font-family="Inter,Arial" font-size="9" fill="#92400E">— verify with finance</text>
+
+  <!-- AI PANEL (floating) -->
+  <rect x="841" y="156" width="279" height="504" fill="white"/>
+  <rect x="841" y="156" width="1" height="504" fill="#E5E7EB"/>
+
+  <!-- AI panel header -->
+  <rect x="841" y="156" width="279" height="58" fill="url(#accentGrad)"/>
+  <text x="860" y="180" font-family="Inter,Arial" font-size="14" fill="white" font-weight="700">✦ AI Assistant</text>
+  <text x="860" y="198" font-family="Inter,Arial" font-size="11" fill="#C7D2FE">Edge AI • Private • Offline</text>
+
+  <!-- Suggested -->
+  <text x="856" y="228" font-family="Inter,Arial" font-size="10" fill="#9CA3AF" font-weight="600">QUICK ACTIONS</text>
+  <rect x="851" y="236" width="259" height="28" rx="7" fill="#F5F3FF" stroke="#DDD6FE" stroke-width="1"/>
+  <text x="862" y="254" font-family="Inter,Arial" font-size="10" fill="#4F46E5">💡 Summarize this PDF</text>
+  <rect x="851" y="270" width="259" height="28" rx="7" fill="#F5F3FF" stroke="#DDD6FE" stroke-width="1"/>
+  <text x="862" y="288" font-family="Inter,Arial" font-size="10" fill="#4F46E5">💡 Extract key numbers</text>
+  <rect x="851" y="304" width="259" height="28" rx="7" fill="#F5F3FF" stroke="#DDD6FE" stroke-width="1"/>
+  <text x="862" y="322" font-family="Inter,Arial" font-size="10" fill="#4F46E5">💡 List action items</text>
+
+  <!-- Chat divider -->
+  <rect x="851" y="344" width="259" height="1" fill="#E5E7EB"/>
+  <text x="856" y="360" font-family="Inter,Arial" font-size="10" fill="#9CA3AF" font-weight="600">CHAT</text>
+
+  <!-- User message -->
+  <rect x="911" y="368" width="189" height="38" rx="8" fill="#4F46E5"/>
+  <text x="921" y="384" font-family="Inter,Arial" font-size="10" fill="white">Summarize the strategy</text>
+  <text x="921" y="398" font-family="Inter,Arial" font-size="10" fill="#C7D2FE">for Q4 expansion</text>
+
+  <!-- AI response -->
+  <rect x="851" y="414" width="249" height="110" rx="8" fill="#F5F3FF" stroke="#EDE9FE" stroke-width="1"/>
+  <text x="862" y="430" font-family="Inter,Arial" font-size="10" fill="#4F46E5" font-weight="700">✦ Speed AI</text>
+  <text x="862" y="446" font-family="Inter,Arial" font-size="10" fill="#374151">Q4 strategy focuses on 3</text>
+  <text x="862" y="460" font-family="Inter,Arial" font-size="10" fill="#374151">pillars: APAC expansion,</text>
+  <text x="862" y="474" font-family="Inter,Arial" font-size="10" fill="#374151">enterprise upsell, and product</text>
+  <text x="862" y="488" font-family="Inter,Arial" font-size="10" fill="#374151">launch in Sept 2025.</text>
+  <text x="862" y="504" font-family="Inter,Arial" font-size="9" fill="#7C3AED">▶ Jump to page 5</text>
+  <text x="862" y="516" font-family="Inter,Arial" font-size="9" fill="#7C3AED">▶ Copy summary</text>
+
+  <!-- Input area -->
+  <rect x="841" y="620" width="279" height="40" fill="white"/>
+  <rect x="841" y="620" width="279" height="1" fill="#E5E7EB"/>
+  <rect x="851" y="627" width="248" height="26" rx="8" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="862" y="643" font-family="Inter,Arial" font-size="10" fill="#9CA3AF">Ask anything…</text>
+  <rect x="1082" y="631" width="14" height="18" rx="4" fill="#4F46E5" fill-opacity="0.8"/>
+  <text x="1089" y="644" text-anchor="middle" font-family="Arial" font-size="10" fill="white">↑</text>
+
+  <!-- Status bar -->
+  <rect x="80" y="655" width="1040" height="20" fill="#F9FAFB" rx="0"/>
+  <rect x="80" y="655" width="1040" height="1" fill="#E5E7EB"/>
+  <text x="96" y="668" font-family="Inter,Arial" font-size="10" fill="#9CA3AF">⚡ Speed PDF  •  14 pages  •  3.1 MB  •  All changes saved  •  Private &amp; Offline</text>
+  <text x="1108" y="668" text-anchor="end" font-family="Inter,Arial" font-size="10" fill="#9CA3AF">v1.0</text>
 </svg>

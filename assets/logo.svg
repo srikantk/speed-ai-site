@@ -1,11 +1,8 @@
-<svg width="140" height="40" viewBox="0 0 140 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-  
-  <!-- ICON -->
-  <path d="M18 4L34 20L18 36L22 20L18 4Z" fill="#4F46E5"/>
-
-  <!-- TEXT -->
-  <text x="45" y="26" font-family="Inter, Arial" font-size="18" font-weight="700" fill="#111827">
-    Speed AI
-  </text>
-
+<svg width="160" height="40" viewBox="0 0 160 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Icon: Lightning bolt in rounded square -->
+  <rect width="36" height="36" x="0" y="2" rx="9" fill="#4F46E5"/>
+  <path d="M21 6L11 21h8l-2 13 11-16h-8l1-12z" fill="white"/>
+  <!-- Text -->
+  <text x="46" y="27" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#111827">Speed AI</text>
 </svg>
+
