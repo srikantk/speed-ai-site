@@ -1,0 +1,20 @@
+<svg width="1200" height="600" viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg">
+
+  <rect width="1200" height="600" fill="#F8FAFF"/>
+
+  <!-- PDF WINDOW -->
+  <rect x="350" y="100" width="500" height="400" rx="16" fill="white" stroke="#E5E7EB"/>
+
+  <!-- TOP BAR -->
+  <rect x="350" y="100" width="500" height="40" rx="16" fill="#F3F4F6"/>
+
+  <!-- SIDEBAR -->
+  <rect x="360" y="150" width="80" height="330" rx="8" fill="#F9FAFB"/>
+
+  <!-- AI PANEL -->
+  <rect x="860" y="140" width="220" height="200" rx="12" fill="white" stroke="#E5E7EB"/>
+
+  <text x="880" y="170" font-size="14" fill="#4F46E5">AI Assistant</text>
+  <text x="880" y="200" font-size="12" fill="#6B7280">Summarize PDF instantly</text>
+
+</svg>
