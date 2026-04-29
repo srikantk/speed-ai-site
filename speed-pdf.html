@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Speed PDF - Fast PDF reader and editor for Windows</title>
+  <meta name="description" content="Speed PDF is a fast Windows PDF reader and basic editor by Speed AI." />
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<div class="nav">
+  <div class="container">
+    <a class="brand" href="index.html">
+      <img src="assets/downloaded/speedai-logo.png" class="brand-logo" alt="Speed AI logo" />
+      <span>Speed AI</span>
+    </a>
+
+    <div class="menu">
+      <a href="speed-pdf.html">Speed PDF</a>
+      <a href="pricing.html">Pricing</a>
+    </div>
+
+    <a class="btn btn-primary nav-cta" href="#download">Get Speed PDF <img src="assets/downloaded/icon-download-arrow.svg" class="btn-icon" alt=""></a>
+  </div>
+</div>
+
+<main>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <p class="eyebrow">Flagship product · Windows</p>
+        <h1>Speed PDF</h1>
+        <p class="lead">
+          A fast PDF reader and basic editor for Windows. Read, annotate, highlight, sign,
+          rotate, reorder, and merge without heavy software.
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#download">Get Speed PDF <img src="assets/downloaded/icon-download-arrow.svg" class="btn-icon" alt=""></a>
+          <a class="btn btn-outline" href="pricing.html">View pricing</a>
+        </div>
+      </div>
+      <img src="assets/downloaded/speed-pdf-hero.jpg" class="hero-image" alt="Speed PDF app preview" />
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Built for everyday PDF work</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Read and review</h3>
+          <p>Open files quickly, navigate large documents smoothly, and keep reading focused.</p>
+        </div>
+        <div class="card">
+          <h3>Edit essentials</h3>
+          <p>Annotate, highlight, sign, rotate, reorder pages, and merge documents in seconds.</p>
+        </div>
+        <div class="card">
+          <h3>AI upgrades planned</h3>
+          <p>Summaries, document chat, and translation are on the roadmap as coming-soon features.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="download">
+    <div class="container signup">
+      <h2>Get Speed PDF for Windows</h2>
+      <p class="lead">Enter your email to unlock the Windows download.</p>
+      <div class="email-row">
+        <input type="email" id="email" placeholder="Enter your email" aria-label="Email address" />
+        <button class="btn btn-primary" onclick="joinWaitlist()">Get Windows download <img src="assets/downloaded/icon-windows.svg" class="btn-icon" alt=""></button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Speed AI</h4>
+        <p>Company brand: Speed AI. Product brand today: Speed PDF.</p>
+      </div>
+      <div>
+        <h4>Speed PDF</h4>
+        <a href="speed-pdf.html">Speed PDF</a>
+        <a href="pricing.html">Pricing</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="about.html">About</a>
+        <a href="blog.html">Blog</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Speed AI. Built for accessible software.</p>
+      <div>
+        <a href="about.html">Privacy</a>
+        <a href="about.html">Terms</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+function joinWaitlist() {
+  const email = document.getElementById('email').value.trim();
+  if (!email) {
+    alert('Please enter your email');
+    return;
+  }
+
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailPattern.test(email)) {
+    alert('Please enter a valid email');
+    return;
+  }
+
+  localStorage.setItem('user_email', email);
+  window.location.href = 'https://example.com/speedpdf-download.exe';
+}
+</script>
+
+</body>
+</html>
