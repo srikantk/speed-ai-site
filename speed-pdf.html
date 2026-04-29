@@ -12,7 +12,7 @@
 <div class="nav">
   <div class="container">
     <a class="brand" href="index.html">
-      <img src="assets/downloaded/speedai-logo.png" class="brand-logo" alt="Speed AI logo" />
+      <img src="assets/logo-mark.svg" class="brand-logo" alt="Speed AI logo" />
       <span>Speed AI</span>
     </a>
 
@@ -44,19 +44,23 @@
     </div>
   </section>
 
-  <section class="section">
+  <section class="section principles-section">
     <div class="container">
+      <p class="eyebrow">Core features</p>
       <h2 class="section-title">Built for everyday PDF work</h2>
       <div class="grid">
         <div class="card">
+          <div class="glyph"><img src="assets/icons/pdf.svg" class="glyph-icon" alt="" /></div>
           <h3>Read and review</h3>
           <p>Open files quickly, navigate large documents smoothly, and keep reading focused.</p>
         </div>
         <div class="card">
+          <div class="glyph"><img src="assets/icons/edit.svg" class="glyph-icon" alt="" /></div>
           <h3>Edit essentials</h3>
           <p>Annotate, highlight, sign, rotate, reorder pages, and merge documents in seconds.</p>
         </div>
         <div class="card">
+          <div class="glyph"><img src="assets/icons/ai.svg" class="glyph-icon" alt="" /></div>
           <h3>AI upgrades planned</h3>
           <p>Summaries, document chat, and translation are on the roadmap as coming-soon features.</p>
         </div>
@@ -65,13 +69,13 @@
   </section>
 
   <section class="section" id="download">
-    <div class="container signup">
+    <div class="container signup signup-centered">
       <h2>Get Speed PDF for Windows</h2>
       <p class="lead">Enter your email to unlock the Windows download.</p>
-      <div class="email-row">
+      <form class="email-row" onsubmit="submitDownloadForm(event)" data-success-message="Thanks. We will send the Speed PDF Windows download to your email.">
         <input type="email" id="email" placeholder="Enter your email" aria-label="Email address" />
-        <button class="btn btn-primary" onclick="joinWaitlist()">Get Windows download <img src="assets/downloaded/icon-windows.svg" class="btn-icon" alt=""></button>
-      </div>
+        <button class="btn btn-primary" type="submit">Get Windows download <img src="assets/downloaded/icon-windows.svg" class="btn-icon" alt=""></button>
+      </form>
     </div>
   </section>
 </main>
@@ -81,7 +85,7 @@
     <div class="footer-grid">
       <div>
         <h4>Speed AI</h4>
-        <p>Everyday software made accessible.</p>
+        <p>Everyday software made accessible</p>
       </div>
       <div>
         <h4>Speed PDF</h4>
@@ -92,10 +96,11 @@
         <h4>Company</h4>
         <a href="about.html">About</a>
         <a href="blog.html">Blog</a>
+        <a href="about.html">Contact</a>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2026 Speed AI. Everyday software made accessible, low-cost, and often free.</p>
+      <p>© 2026 Speed AI. Built for accessible software.</p>
       <div>
         <a href="about.html">Privacy</a>
         <a href="about.html">Terms</a>
@@ -104,24 +109,8 @@
   </div>
 </div>
 
-<script>
-function joinWaitlist() {
-  const email = document.getElementById('email').value.trim();
-  if (!email) {
-    alert('Please enter your email');
-    return;
-  }
-
-  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (!emailPattern.test(email)) {
-    alert('Please enter a valid email');
-    return;
-  }
-
-  localStorage.setItem('user_email', email);
-  window.location.href = 'https://example.com/speedpdf-download.exe';
-}
-</script>
+<script src="assets/google-form-submit.js"></script>
+<script src="assets/brand-split.js"></script>
 
 </body>
 </html>

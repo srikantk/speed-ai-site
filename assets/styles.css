@@ -29,21 +29,21 @@
 }
 
 :root {
-  --bg: #0f1115;
-  --surface: #171a21;
-  --surface-soft: #1d212a;
-  --text: #f5f7fb;
-  --muted: #b3bac8;
-  --line: #2b3140;
+  --bg: #f7f9fd;
+  --surface: rgba(255, 255, 255, 0.72);
+  --surface-soft: rgba(255, 255, 255, 0.9);
+  --text: #1a2333;
+  --muted: #55617a;
+  --line: rgba(68, 92, 129, 0.24);
   --red: #d71920;
   --red-dark: #b21218;
 }
 
 body {
   background:
-    radial-gradient(900px 520px at 10% -10%, rgba(215, 25, 32, 0.18) 0%, rgba(215, 25, 32, 0) 62%),
-    radial-gradient(760px 460px at 92% 0%, rgba(178, 18, 24, 0.22) 0%, rgba(178, 18, 24, 0) 65%),
-    linear-gradient(180deg, #10141d 0%, #0f1115 45%, #111621 100%);
+    radial-gradient(900px 520px at 8% -12%, rgba(215, 25, 32, 0.12) 0%, rgba(215, 25, 32, 0) 64%),
+    radial-gradient(760px 460px at 92% 0%, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.2) 65%),
+    linear-gradient(180deg, #fbfcff 0%, #f4f7fd 44%, #f7f9ff 100%);
   color: var(--text);
   line-height: 1.55;
   font-family: Inter, ui-sans-serif, system-ui, sans-serif;
@@ -52,9 +52,20 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+a:not(.btn) {
+  font-size: 0.95em;
+}
+
 .container {
   width: min(1120px, calc(100% - 32px));
   margin: 0 auto;
+}
+.brand-speed {
+  color: #111111;
+}
+
+.brand-xyz {
+  color: var(--red);
 }
 
 .nav {
@@ -62,7 +73,7 @@ body {
   top: 0;
   z-index: 20;
   border-bottom: 1px solid var(--line);
-  background: rgba(15, 17, 21, 0.92);
+  background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(8px);
 }
 
@@ -85,9 +96,11 @@ body {
 }
 
 .brand-logo {
-  width: 28px;
-  height: 28px;
+  width: 46px;
+  height: 46px;
   object-fit: contain;
+  display: block;
+  filter: contrast(1.08) saturate(1.05) drop-shadow(0 1px 1px rgba(0, 0, 0, 0.08));
 }
 
 .menu {
@@ -100,7 +113,7 @@ body {
 .menu a {
   position: relative;
   text-decoration: none;
-  color: #e3e8f4;
+  color: #2e3d59;
   font-weight: 600;
   font-size: 15px;
   letter-spacing: 0.005em;
@@ -109,7 +122,7 @@ body {
 }
 
 .menu a:hover {
-  color: #ffffff;
+  color: #162238;
   opacity: 1;
 }
 
@@ -176,8 +189,8 @@ button.btn {
 }
 
 .btn-outline {
-  color: #e6ecfb;
-  background: #1b202a;
+  color: #1c2b44;
+  background: rgba(255, 255, 255, 0.7);
   border: 1px solid var(--line);
 }
 
@@ -198,9 +211,9 @@ button.btn {
   line-height: 16px;
   font-weight: 400;
   margin-bottom: 0;
-  color: #b8c0cf;
-  background: rgba(29, 33, 42, 0.5);
-  border: 1px solid #2f3646;
+  color: #4d5b74;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(99, 126, 170, 0.26);
 }
 
 .hero-home .hero-grid {
@@ -252,9 +265,9 @@ button.btn {
   display: inline-block;
   padding: 6px 12px;
   border-radius: 999px;
-  background: #1c2029;
-  border: 1px solid #2a313e;
-  color: #c4cede;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(99, 126, 170, 0.26);
+  color: #4e5f7c;
   font-weight: 700;
   font-size: 13px;
   margin-bottom: 16px;
@@ -299,14 +312,14 @@ p {
 .micro {
   margin-top: 14px;
   font-size: 14px;
-  color: #6d6161;
+  color: #6e7688;
 }
 
 .hero-image {
   width: 100%;
   border-radius: 18px;
-  border: 1px solid #2a313d;
-  box-shadow: 0 18px 34px rgba(0, 0, 0, 0.38);
+  border: 1px solid rgba(72, 94, 130, 0.24);
+  box-shadow: 0 18px 34px rgba(84, 105, 139, 0.18);
 }
 
 .section {
@@ -345,19 +358,26 @@ p {
   border: 1px solid var(--line);
   border-radius: 16px;
   padding: 22px;
-  box-shadow: 0 6px 18px rgba(24, 24, 24, 0.05);
+  box-shadow: 0 8px 26px rgba(84, 105, 139, 0.08);
+  backdrop-filter: blur(4px);
 }
 
 .glyph {
-  width: 34px;
-  height: 34px;
+  width: 42px;
+  height: 42px;
   border-radius: 8px;
   display: grid;
   place-items: center;
-  background: #212735;
-  color: #e6ecfb;
+  background: rgba(255, 255, 255, 0.92);
+  color: #1c2b44;
   font-weight: 800;
   margin-bottom: 12px;
+}
+
+.glyph-icon {
+  width: 26px;
+  height: 26px;
+  display: block;
 }
 
 .product {
@@ -368,7 +388,7 @@ p {
 }
 
 .tag {
-  color: #bac2d0;
+  color: #5f6d87;
   font-weight: 700;
   font-size: 13px;
   text-transform: uppercase;
@@ -382,10 +402,31 @@ p {
 }
 
 .signup {
-  border: 1px solid #30384a;
-  background: linear-gradient(180deg, #1a1f29 0%, #141821 100%);
+  border: 1px solid rgba(83, 108, 148, 0.24);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(245, 249, 255, 0.82) 100%);
   border-radius: 22px;
   padding: 32px;
+  backdrop-filter: blur(8px);
+}
+
+.signup-centered {
+  text-align: center;
+}
+
+.signup-centered .lead {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.signup-centered .email-row {
+  justify-content: center;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.signup-centered input[type="email"] {
+  max-width: 420px;
 }
 
 .email-row {
@@ -400,9 +441,9 @@ input[type="email"] {
   min-width: 240px;
   padding: 12px 14px;
   border-radius: 12px;
-  border: 1px solid #364059;
-  background: #0f131b;
-  color: #f5f7fb;
+  border: 1px solid rgba(83, 108, 148, 0.32);
+  background: rgba(255, 255, 255, 0.85);
+  color: #1a2333;
 }
 
 input[type="email"]:focus {
@@ -414,8 +455,10 @@ input[type="email"]:focus {
 .footer {
   margin-top: 72px;
   border-top: 1px solid var(--line);
-  background: #131720;
+  background: rgba(255, 255, 255, 0.66);
   padding: 48px 0 24px;
+  backdrop-filter: blur(8px);
+  font-size: 0.9rem;
 }
 
 .footer-grid {
@@ -426,11 +469,12 @@ input[type="email"]:focus {
 
 .footer h4 {
   margin-bottom: 8px;
+  font-size: 0.98rem;
 }
 
 .footer a {
   display: block;
-  color: #c8d0df;
+  color: #4b5c78;
   text-decoration: none;
   margin: 4px 0;
 }
@@ -446,6 +490,7 @@ input[type="email"]:focus {
   display: flex;
   justify-content: space-between;
   gap: 14px;
+  font-size: 0.8rem;
 }
 
 @media (max-width: 940px) {
@@ -456,13 +501,17 @@ input[type="email"]:focus {
     grid-template-columns: 1fr;
   }
 
+  .footer-grid {
+    gap: 26px;
+  }
+
   .nav .container {
     min-height: 68px;
-    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-columns: 1fr;
     grid-template-areas:
-      "brand cta"
-      "menu menu";
-    gap: 8px 10px;
+      "brand"
+      "menu";
+    gap: 10px;
     padding: 10px 0 12px;
   }
 
@@ -479,17 +528,23 @@ input[type="email"]:focus {
   }
 
   .nav-cta {
-    grid-area: cta;
-    justify-self: end;
-    padding: 9px 12px;
-    font-size: 13px;
-    line-height: 1;
-    white-space: nowrap;
+    display: none;
   }
 
   .btn,
   button.btn {
     padding: 10px 14px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .brand-logo {
+    width: 40px;
+    height: 40px;
   }
 }
 
@@ -498,12 +553,6 @@ input[type="email"]:focus {
     grid-template-columns: 1fr;
     grid-template-areas:
       "brand"
-      "menu"
-      "cta";
-  }
-
-  .nav-cta {
-    justify-self: stretch;
-    width: 100%;
+      "menu";
   }
 }

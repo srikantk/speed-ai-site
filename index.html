@@ -18,7 +18,7 @@
 <div class="nav">
   <div class="container">
     <a class="brand" href="index.html">
-      <img src="assets/downloaded/speedai-logo.png" class="brand-logo" alt="Speed AI logo" />
+      <img src="assets/logo-mark.svg" class="brand-logo" alt="Speed AI logo" />
       <span>Speed AI</span>
     </a>
 
@@ -60,17 +60,17 @@
 
       <div class="grid">
         <div class="card">
-          <div class="glyph">◆</div>
+          <div class="glyph"><img src="assets/icons/principle-accessible.svg" class="glyph-icon" alt=""></div>
           <h3>Accessible by default</h3>
           <p>Core tools should not be locked behind expensive plans or confusing subscriptions.</p>
         </div>
         <div class="card">
-          <div class="glyph">⚡</div>
+          <div class="glyph"><img src="assets/icons/principle-fast.svg" class="glyph-icon" alt=""></div>
           <h3>Fast everyday work</h3>
           <p>Lightweight Windows apps that open quickly, feel simple, and stay focused on the task.</p>
         </div>
         <div class="card">
-          <div class="glyph">✦</div>
+          <div class="glyph"><img src="assets/icons/principle-ai.svg" class="glyph-icon" alt=""></div>
           <h3>AI kept affordable</h3>
           <p>Edge AI, open-source models, and custom models help keep helpful AI free or low-cost.</p>
         </div>
@@ -81,7 +81,7 @@
   <section class="section">
     <div class="container product">
       <div>
-        <p class="tag">Flagship · Windows</p>
+        <p class="eyebrow">Flagship product · Windows</p>
         <h2>Speed PDF</h2>
         <p class="lead">
           A Windows PDF reader and basic editor inspired by the simplicity of Mac Preview.
@@ -97,14 +97,14 @@
   </section>
 
   <section class="section" id="download">
-    <div class="container signup">
+    <div class="container signup signup-centered">
       <h2>Speed is a feature. <span class="text-accent">Free is the price.</span></h2>
       <p class="lead">Enter your email to receive the Speed PDF Windows download when it is available.</p>
 
-      <div class="email-row">
+      <form class="email-row" onsubmit="submitDownloadForm(event)" data-success-message="Thanks. We will send the Speed PDF Windows download to your email.">
         <input type="email" id="email" placeholder="Enter your email" aria-label="Email address">
-        <button class="btn btn-primary" onclick="downloadApp()">Download <img src="assets/downloaded/icon-download-arrow.svg" class="btn-icon" alt=""></button>
-      </div>
+        <button class="btn btn-primary" type="submit">Download <img src="assets/downloaded/icon-download-arrow.svg" class="btn-icon" alt=""></button>
+      </form>
     </div>
   </section>
 <div class="footer">
@@ -112,7 +112,7 @@
     <div class="footer-grid">
       <div>
         <h4>Speed AI</h4>
-        <p>Everyday software made accessible, low-cost, and often free with AI kept affordable.</p>
+        <p>Everyday software made accessible</p>
       </div>
       <div>
         <h4>Speed PDF</h4>
@@ -123,11 +123,12 @@
         <h4>Company</h4>
         <a href="about.html">About</a>
         <a href="blog.html">Blog</a>
+        <a href="about.html">Contact</a>
       </div>
     </div>
 
     <div class="footer-bottom">
-      <p>© 2026 Speed AI. Everyday software made accessible, low-cost, and often free.</p>
+      <p>© 2026 Speed AI. Built for accessible software.</p>
       <div>
         <a href="about.html">Privacy</a>
         <a href="about.html">Terms</a>
@@ -137,21 +138,8 @@
 </div>
 </main>
 
-<script>
-function downloadApp() {
-  const email = document.getElementById("email").value;
-
-  if (!email) {
-    alert("Please enter your email");
-    return;
-  }
-
-  // Save email locally (basic capture)
-  localStorage.setItem("user_email", email);
-
-  alert("Thanks. We will send the Speed PDF Windows download to " + email + ".");
-}
-</script>
+<script src="assets/google-form-submit.js"></script>
+<script src="assets/brand-split.js"></script>
 
 </body>
 </html>

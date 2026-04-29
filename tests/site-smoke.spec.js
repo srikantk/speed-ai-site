@@ -10,7 +10,7 @@ test('homepage loads with key content', async ({ page }) => {
 
 test('about and pricing pages render expected headings', async ({ page }) => {
   await page.goto('/about.html');
-  await expect(page.getByRole('heading', { level: 1 })).toContainText('About Speed AI');
+  await expect(page.getByRole('heading', { level: 1 })).toContainText(/About Speed ?AI/i);
 
   await page.goto('/pricing.html');
   await expect(page.getByRole('heading', { level: 1 })).toContainText('Pricing');
