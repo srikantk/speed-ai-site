@@ -3,29 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Speed PDF - Fast PDF reader and editor for Windows</title>
-  <meta name="description" content="Speed PDF is a fast Windows PDF reader and basic editor by Speed AI." />
+  <meta name="theme-color" content="#d71920" />
+  <title>Speed PDF — Fast PDF reader and editor for Windows</title>
+  <meta name="description" content="Speed PDF is a fast, lightweight Windows PDF reader and basic editor by Speed AI. Read, annotate, sign, rotate, reorder, and merge without heavy software." />
+  <meta property="og:title" content="Speed PDF — Fast PDF reader and editor for Windows">
+  <meta property="og:description" content="A fast Windows PDF reader and basic editor by Speed AI.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/downloaded/speed-pdf-hero.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/svg+xml" href="assets/logo-mark.svg">
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
 
-<div class="nav">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="nav">
   <div class="container">
-    <a class="brand" href="index.html">
-      <img src="assets/logo-mark.svg" class="brand-logo" alt="Speed AI logo" />
+    <a class="brand" href="index.html" aria-label="Speed AI home">
+      <img src="assets/logo-mark.svg" class="brand-logo" alt="" />
       <span>Speed AI</span>
     </a>
 
-    <div class="menu">
-      <a href="speed-pdf.html">Speed PDF</a>
+    <nav class="menu" aria-label="Primary">
+      <a href="speed-pdf.html" aria-current="page">Speed PDF</a>
       <a href="pricing.html">Pricing</a>
-    </div>
+    </nav>
 
     <a class="btn btn-primary nav-cta" href="#download">Get Speed PDF <img src="assets/downloaded/icon-download-arrow.svg" class="btn-icon" alt=""></a>
   </div>
-</div>
+</header>
 
-<main>
+<main id="main">
   <section class="hero">
     <div class="container hero-grid">
       <div>
@@ -33,21 +42,21 @@
         <h1>Speed PDF</h1>
         <p class="lead">
           A fast PDF reader and basic editor for Windows. Read, annotate, highlight, sign,
-          rotate, reorder, and merge without heavy software.
+          rotate, reorder, and merge — without heavy software.
         </p>
         <div class="cta-row">
           <a class="btn btn-primary" href="#download">Get Speed PDF <img src="assets/downloaded/icon-download-arrow.svg" class="btn-icon" alt=""></a>
           <a class="btn btn-outline" href="pricing.html">View pricing</a>
         </div>
       </div>
-      <img src="assets/downloaded/speed-pdf-hero.jpg" class="hero-image" alt="Speed PDF app preview" />
+      <img src="assets/downloaded/speed-pdf-hero.jpg" class="hero-image" alt="Speed PDF app preview" loading="eager" decoding="async" />
     </div>
   </section>
 
   <section class="section principles-section">
     <div class="container">
       <p class="eyebrow">Core features</p>
-      <h2 class="section-title">Built for everyday PDF work</h2>
+      <h2 class="section-title">Built for everyday PDF work.</h2>
       <div class="grid">
         <div class="card">
           <div class="glyph"><img src="assets/icons/pdf.svg" class="glyph-icon" alt="" /></div>
@@ -70,25 +79,25 @@
 
   <section class="section" id="download">
     <div class="container signup signup-centered">
-      <h2>Get Speed PDF for Windows</h2>
-      <p class="lead">Enter your email to unlock the Windows download.</p>
-      <form class="email-row" onsubmit="submitDownloadForm(event)" data-success-message="Thanks. We will send the Speed PDF Windows download to your email.">
-        <input type="email" id="email" placeholder="Enter your email" aria-label="Email address" />
+      <h2>Get Speed PDF for Windows.</h2>
+      <p class="lead">Enter your email to unlock the Windows download when it is available.</p>
+      <form class="email-row" onsubmit="submitDownloadForm(event)" data-success-message="Thanks. We will send the Speed PDF Windows download to your email." novalidate>
+        <input type="email" id="email" name="email" placeholder="Enter your email" aria-label="Email address" required autocomplete="email" />
         <button class="btn btn-primary" type="submit">Get Windows download <img src="assets/downloaded/icon-windows.svg" class="btn-icon" alt=""></button>
       </form>
     </div>
   </section>
 </main>
 
-<div class="footer">
+<footer class="footer">
   <div class="container">
     <div class="footer-grid">
       <div>
         <h4>Speed AI</h4>
-        <p>Everyday software made accessible</p>
+        <p>Everyday software made accessible.</p>
       </div>
       <div>
-        <h4>Speed PDF</h4>
+        <h4>Product</h4>
         <a href="speed-pdf.html">Speed PDF</a>
         <a href="pricing.html">Pricing</a>
       </div>
@@ -107,7 +116,7 @@
       </div>
     </div>
   </div>
-</div>
+</footer>
 
 <script src="assets/google-form-submit.js"></script>
 <script src="assets/brand-split.js"></script>

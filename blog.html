@@ -3,28 +3,36 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blog - Speed AI</title>
+  <meta name="theme-color" content="#d71920" />
+  <title>Blog — Speed AI</title>
+  <meta name="description" content="Product notes, release updates, and roadmap snapshots from Speed AI.">
+  <meta property="og:title" content="Blog — Speed AI">
+  <meta property="og:description" content="Product notes, release updates, and roadmap snapshots from Speed AI.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="assets/logo-mark.svg">
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
 
-<div class="nav">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="nav">
   <div class="container">
-    <a class="brand" href="index.html">
-      <img src="assets/logo-mark.svg" class="brand-logo" alt="Speed AI logo" />
+    <a class="brand" href="index.html" aria-label="Speed AI home">
+      <img src="assets/logo-mark.svg" class="brand-logo" alt="" />
       <span>Speed AI</span>
     </a>
 
-    <div class="menu">
+    <nav class="menu" aria-label="Primary">
       <a href="speed-pdf.html">Speed PDF</a>
       <a href="pricing.html">Pricing</a>
-    </div>
+    </nav>
 
-    <a class="btn btn-primary nav-cta" href="speed-pdf.html">Get Speed PDF</a>
+    <a class="btn btn-primary nav-cta" href="speed-pdf.html">Get Speed PDF <img src="assets/downloaded/icon-download-arrow.svg" class="btn-icon" alt=""></a>
   </div>
-</div>
+</header>
 
-<main>
+<main id="main">
   <section class="hero">
     <div class="container">
       <p class="eyebrow">Company updates</p>
@@ -51,15 +59,15 @@
   </section>
 </main>
 
-<div class="footer">
+<footer class="footer">
   <div class="container">
     <div class="footer-grid">
       <div>
         <h4>Speed AI</h4>
-        <p>Everyday software made accessible</p>
+        <p>Everyday software made accessible.</p>
       </div>
       <div>
-        <h4>Speed PDF</h4>
+        <h4>Product</h4>
         <a href="speed-pdf.html">Speed PDF</a>
         <a href="pricing.html">Pricing</a>
       </div>
@@ -78,7 +86,7 @@
       </div>
     </div>
   </div>
-</div>
+</footer>
 
 <script src="assets/brand-split.js"></script>
 

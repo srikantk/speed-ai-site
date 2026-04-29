@@ -4,34 +4,43 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#d71920" />
 
   <title>Speed AI — Affordable apps led by Speed PDF</title>
 
-  <meta name="description" content="Everyday software, priced for everyone. Speed AI builds low-cost apps led by Speed PDF for Windows.">
+  <meta name="description" content="Speed AI builds fast, accessible Windows apps that stay low-cost and often free, led by Speed PDF.">
 
+  <meta property="og:title" content="Speed AI — Affordable apps led by Speed PDF">
+  <meta property="og:description" content="Fast, accessible Windows apps. Speed PDF is our flagship — read, annotate, sign, and merge PDFs without heavy software.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/downloaded/speed-pdf-hero.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/svg+xml" href="assets/logo-mark.svg">
   <link rel="stylesheet" href="assets/styles.css">
-
 </head>
 
 <body>
 
-<div class="nav">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="nav">
   <div class="container">
-    <a class="brand" href="index.html">
-      <img src="assets/logo-mark.svg" class="brand-logo" alt="Speed AI logo" />
+    <a class="brand" href="index.html" aria-label="Speed AI home">
+      <img src="assets/logo-mark.svg" class="brand-logo" alt="" />
       <span>Speed AI</span>
     </a>
 
-    <div class="menu">
+    <nav class="menu" aria-label="Primary">
       <a href="speed-pdf.html">Speed PDF</a>
       <a href="pricing.html">Pricing</a>
-    </div>
+    </nav>
 
     <a class="btn btn-primary nav-cta" href="speed-pdf.html">Get Speed PDF <img src="assets/downloaded/icon-download-arrow.svg" class="btn-icon" alt=""></a>
   </div>
-</div>
+</header>
 
-<main>
+<main id="main">
   <section class="hero hero-home">
     <div class="container hero-grid">
       <div class="hero-home-copy">
@@ -44,12 +53,13 @@
 
         <div class="cta-row">
           <a class="btn btn-primary" href="speed-pdf.html">Get Speed PDF <img src="assets/downloaded/icon-download-arrow.svg" class="btn-icon" alt=""></a>
+          <a class="btn btn-outline" href="#download">Join the waitlist</a>
         </div>
 
         <p class="micro">Fast PDF reading and basic editing for Windows · AI features coming soon</p>
       </div>
 
-      <img src="assets/downloaded/speed-pdf-hero.jpg" class="hero-image" alt="Speed PDF reader and editor interface">
+      <img src="assets/downloaded/speed-pdf-hero.jpg" class="hero-image" alt="Speed PDF reader and editor interface" loading="eager" decoding="async">
     </div>
   </section>
 
@@ -92,7 +102,7 @@
           <a class="btn btn-outline" href="speed-pdf.html">Learn more</a>
         </div>
       </div>
-      <img src="assets/downloaded/speed-pdf-hero.jpg" class="shot" alt="Speed PDF app">
+      <img src="assets/downloaded/speed-pdf-hero.jpg" class="shot" alt="Speed PDF app preview" loading="lazy" decoding="async">
     </div>
   </section>
 
@@ -101,21 +111,23 @@
       <h2>Speed is a feature. <span class="text-accent">Free is the price.</span></h2>
       <p class="lead">Enter your email to receive the Speed PDF Windows download when it is available.</p>
 
-      <form class="email-row" onsubmit="submitDownloadForm(event)" data-success-message="Thanks. We will send the Speed PDF Windows download to your email.">
-        <input type="email" id="email" placeholder="Enter your email" aria-label="Email address">
+      <form class="email-row" onsubmit="submitDownloadForm(event)" data-success-message="Thanks. We will send the Speed PDF Windows download to your email." novalidate>
+        <input type="email" id="email" name="email" placeholder="Enter your email" aria-label="Email address" required autocomplete="email">
         <button class="btn btn-primary" type="submit">Download <img src="assets/downloaded/icon-download-arrow.svg" class="btn-icon" alt=""></button>
       </form>
     </div>
   </section>
-<div class="footer">
+</main>
+
+<footer class="footer">
   <div class="container">
     <div class="footer-grid">
       <div>
         <h4>Speed AI</h4>
-        <p>Everyday software made accessible</p>
+        <p>Everyday software made accessible.</p>
       </div>
       <div>
-        <h4>Speed PDF</h4>
+        <h4>Product</h4>
         <a href="speed-pdf.html">Speed PDF</a>
         <a href="pricing.html">Pricing</a>
       </div>
@@ -135,8 +147,7 @@
       </div>
     </div>
   </div>
-</div>
-</main>
+</footer>
 
 <script src="assets/google-form-submit.js"></script>
 <script src="assets/brand-split.js"></script>
